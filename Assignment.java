@@ -11,3 +11,4 @@ public class Assignment {
       System.out.printf("%.2f Feet = %.2f Inches\n%.2f Inches = %.2f cm", feet, in, in, cm);
       Limerence.close();
 }
+}
