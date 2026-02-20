@@ -17,11 +17,15 @@ public class LibraryFeeSystem
                 int days2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter days late:","Book Borrower",JOptionPane.QUESTION_MESSAGE));
                 int fine = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter fine:","Book Borrower",JOptionPane.QUESTION_MESSAGE));
                 JOptionPane.showMessageDialog(null,"Total Fine: " + computefine(days2,fine),"Book Borrower",JOptionPane.INFORMATION_MESSAGE);
+                break;
             case 3:
                 int days3 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter days late:","Book Borrower",JOptionPane.QUESTION_MESSAGE));
                 int fine2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter fine:","Book Borrower",JOptionPane.QUESTION_MESSAGE));
                 int dis = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter discount:","Book Borrower",JOptionPane.QUESTION_MESSAGE));
                 JOptionPane.showMessageDialog(null,"Total Fine: " + computefine(days3,fine2,dis),"Book Borrower",JOptionPane.INFORMATION_MESSAGE);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null,"ERROR! INVALID CHOICE!","ERROR",JOptionPane.ERROR_MESSAGE);
         }
         Ame.close();
     }
