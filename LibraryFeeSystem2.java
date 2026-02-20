@@ -2,13 +2,14 @@ import java.util.*;
 
 import javax.swing.JOptionPane;
 //Compounded Discounts for library fees
+//Additive Discounts in the future...?
 public class LibraryFeeSystem2
 {
     public static void main(String[]args)
     {
         Scanner Ame2 = new Scanner(System.in);
         int c,d1,f1,d2,f2,ds,c2;
-        double spds = 20;
+        double spds = 20; //Testing static discounts for now... 
         c = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter choice:\n1. Regular\n2. Faculty","Book Borrower 2.0",JOptionPane.QUESTION_MESSAGE));
         switch (c) {
             case 1:
