@@ -15,7 +15,10 @@ public class StudentGrade {
             System.out.printf("Enter grade for Student %d: ", i+1);
             int grade = sc.nextInt();
             gradeSum = gradeSum + grade;
-            if (grade >= 90) {
+            if (grade >=101) {
+                System.out.print("INVALID GRADE!");
+                System.exit(grade);
+            } else if (grade >= 90) {
                 output += "\nStudent " + (i+1) +  ": A - Passed";
                 Passed++;
             } else if (grade >= 80) {
