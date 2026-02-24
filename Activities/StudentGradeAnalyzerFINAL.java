@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class StudentGrade {
+public class StudentGradeAnalyzerFINAL {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double gradeSum = 0;
